@@ -24,7 +24,7 @@ export default function Reservations() {
                 numOfDays: returnDate.diff(pickupDate,"day"),
                 pickupDate: dayjs(pickupDate).format("YYYY/MM/DD"),
                 pickupLocation: pickupLocation,
-                returnDate: dayjs(pickupDate).format("YYYY/MM/DD"),
+                returnDate: dayjs(returnDate).format("YYYY/MM/DD"),
                 returnLocation: returnLocation
             }
             dispatch(addReservation(item))
