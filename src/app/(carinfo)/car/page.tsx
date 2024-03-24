@@ -14,9 +14,9 @@ export default  function Car() {
                 <CarCatalog carJson={cars}/>
             </Suspense>
             
-            <hr className="my-10"/>
+            {/* <hr className="my-10"/>
             <h1 className="text-xl font-medim">Try Client-side Car Panel</h1>
-            <CarPanel/>
+            <CarPanel/> */}
             
         </main>
     )
