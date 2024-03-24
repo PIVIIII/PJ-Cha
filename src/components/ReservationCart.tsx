@@ -9,22 +9,27 @@ export default function ReservationCart() {
 
     return (
         <>
+            <div className="flex justify-center mt-30">
+                <div className="mt-10 text-2xl text-rose-500 ">-You can reserve a maximum of 3 cars only-</div>
+            </div>
         {
             carItems.map((reservationsItem)=>(
-                <div className="bg-slate-300 rounded px-5 mx-5 py-2 my-2"
-                key={reservationsItem.carId}>
-                    <div className="text-xl">{reservationsItem.carModel}</div>
-                    <div className="text-sm">Pick-up {reservationsItem.pickupDate}
-                     from {reservationsItem.pickupLocation}
+                <div className="mx-auto my-10 w-[40%] shadow-lg p-2 rounded-lg bg-red-200 flex flex-row ">
+                    <div className='w-60 h-40 bg-white m-5'> </div>
+                    <div className="m-5 py-3 px-3 font-mono">
+                        <div className="text-2xl">{reservationsItem.carModel}</div>
+                        <div className="text-base">Pick-up:{reservationsItem.pickupDate}
+                        | from {reservationsItem.pickupLocation}
+                        </div>
+                        <div className="text-base">Return   :{reservationsItem.returnDate}
+                        | from {reservationsItem.returnLocation}
+                        </div>
+                        <div className="text-base ">Duration: {reservationsItem.numOfDays}</div>
+                        <button className="block rounded-md bg-yellow-300 hover:bg-indigo-200 px-3 py-2
+                        shadow-sm text-black" onClick={ ()=> dispatch(removeReservation(reservationsItem))}>
+                        remove
+                        </button>
                     </div>
-                    <div className="text-sm">Return {reservationsItem.returnDate}
-                     from {reservationsItem.returnLocation}
-                    </div>
-                    <div className="text-md">Duration: {reservationsItem.numOfDays}</div>
-                    <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2
-                    shadow-sm text-white" onClick={ ()=> dispatch(removeReservation(reservationsItem))}>
-                    Remove from Cart
-                    </button>
                 </div>
             ))
         }
