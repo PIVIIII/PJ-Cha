@@ -29,13 +29,15 @@ export default function Banner () {
                 : null
             }
 
-            <button className='bg-white text-cyan-600 border border-cyan-600
-                font-semibold py-2 px-2 m-2 rounded z-30 absolute bottom-0 right-0
-                hover:bg-cyan-600 hover:text-white hover:border-transparent'
-                onClick={ (e)=> { e.stopPropagation(); router.push('/car')}}
-            >
-                Select Your Travel Partner NOW
-            </button>
+            <div className='flex items-center justify-center h-full'>
+                <button className='bg-white text-cyan-600 border border-cyan-600
+                    font-semibold py-2 px-2 m-2 rounded z-30 absolute bottom-0 
+                    hover:bg-cyan-600 hover:text-white hover:border-transparent'
+                    onClick={ (e)=> { e.stopPropagation(); router.push('/car')}}
+                >
+                    Select Your Travel Partner NOW
+                </button>
+            </div>
 
         </div>
     )
