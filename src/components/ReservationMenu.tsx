@@ -1,9 +1,8 @@
 import { Children } from 'react';
-import styles from './reservationmenu.module.css'
 
 export default function ReservationMenu() {
     return (
-        <div className={styles.submenu}>
+        <div className="rounded-lg border border-solid border-gray-300 p-10 m-5">
             Sub-Menu Here
         </div>
     );
