@@ -29,31 +29,31 @@ export default function RegisterPage() {
     return (
         <main className="h-full w-full m-5 p-5">
             <div>
-                <h1 className="text-2xl text-center my-10">Register</h1>
+                <h1 className="text-3xl text-center my-10 font-bold">Register</h1>
                 <form onSubmit={handleSubmit}>
-                    <div className="text-xl text-blue-700">Register User</div>
-                    <div className="flex items-center w-1/2 my-2" onChange={handleChange}>
+                    <div className="text-xl text-blue-700 ml-20">Register User</div>
+                    <div className="flex items-center w-1/2 my-2 ml-20" onChange={handleChange}>
                         <label className="w-auto block test-gray-700 pr-4" htmlFor="name">
                             Name</label>
                         <input type="text" required id="name" name="name" placeholder='Name'
                         className='bg-white border-2 border-gray-200 rounded w-full p-2
                         text-gray-700 focus:outline-none focus:border-blue-400'/>
                     </div>
-                    <div className="flex items-center w-1/2 my-2" onChange={handleChange}>
+                    <div className="flex items-center w-1/2 my-2 ml-20" onChange={handleChange}>
                         <label className="w-auto block test-gray-700 pr-4" htmlFor="email">
                             Email</label>
                         <input type="text" required id="email" name="email" placeholder='Email'
                         className='bg-white border-2 border-gray-200 rounded w-full p-2
                         text-gray-700 focus:outline-none focus:border-blue-400'/>
                     </div>
-                    <div className="flex items-center w-1/2 my-2" onChange={handleChange}>
+                    <div className="flex items-center w-1/2 my-2 ml-20" onChange={handleChange}>
                         <label className="w-auto block test-gray-700 pr-4" htmlFor="tel">
                             Tel.</label>
                         <input type="text" required id="tel" name="tel" placeholder='012-345-6789'
                         className='bg-white border-2 border-gray-200 rounded w-full p-2
                         text-gray-700 focus:outline-none focus:border-blue-400'/>
                     </div>
-                    <div className="flex items-center w-1/2 my-2" onChange={handleChange}>
+                    <div className="flex items-center w-1/2 my-2 ml-20" onChange={handleChange}>
                         <label className="w-auto block test-gray-700 pr-4" htmlFor="password">
                             Password</label>
                         <input type="password" required id="password" name="password" placeholder='Minimum 6 characters'
@@ -62,7 +62,7 @@ export default function RegisterPage() {
                     </div>
                     
                     <button type="submit" className="bg-blue-500 hover:bg-bluue-700
-                    text-white p-2 rounded">Register</button>
+                    text-white p-2 rounded ml-20">Register</button>
                 </form>
             </div>
         </main>

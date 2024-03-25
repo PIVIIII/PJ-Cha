@@ -56,7 +56,7 @@ export default function Reservations() {
                         <LocationDateReserve onDateChange={(value:Dayjs)=>{setReturnDate(value)}}
                         onLocationChange={(value:string)=>{setReturnLocation(value)}}/>                 
                     </div>
-                    <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2
+                    <button className="block rounded-md bg-sky-600 hover:bg-blue-900 px-3 py-2
                         shadow-sm text-white" onClick={makeReservation}>
                         Reserve this Car
                     </button>

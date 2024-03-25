@@ -18,14 +18,10 @@ export default function ReservationCart() {
                     <div className='w-60 h-40 bg-white m-5'> </div>
                     <div className="m-5 py-3 px-3 font-mono">
                         <div className="text-2xl">{reservationsItem.carModel}</div>
-                        <div className="text-base">Pick-up:{reservationsItem.pickupDate}
-                        | from {reservationsItem.pickupLocation}
-                        </div>
-                        <div className="text-base">Return   :{reservationsItem.returnDate}
-                        | from {reservationsItem.returnLocation}
-                        </div>
-                        <div className="text-base ">Duration: {reservationsItem.numOfDays}</div>
-                        <button className="block rounded-md bg-yellow-300 hover:bg-indigo-200 px-3 py-2
+                        <div className="text-base">Pick-up: {reservationsItem.pickupDate}  From {reservationsItem.pickupLocation}</div>
+                        <div className="text-base">Return: {reservationsItem.returnDate}  From {reservationsItem.returnLocation}</div>
+                        <div className="text-base ">Duration: {reservationsItem.numOfDays} days</div>
+                        <button className="block rounded-md bg-rose-600 mt-3 text-white hover:bg-rose-900 px-3 py-2
                         shadow-sm text-black" onClick={ ()=> dispatch(removeReservation(reservationsItem))}>
                         remove
                         </button>
