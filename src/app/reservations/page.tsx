@@ -62,11 +62,11 @@ export default function Reservations() {
                     </button>
                 </div>
 
-                <div className="w-60 h-70 bg-black m-5 flex justify-center items-center">
-                     {/* <Image src='/img/cover2.jpg' 
-                     alt='cover' 
-                    fill={true}
-                    objectFit='cover'/> */}
+                <div className="rounded-lg w-[200px] h-[400px] mx-3 my-5 relative">
+                    <Image src='/img/calendar.jpg' 
+                    alt='calendar'
+                    fill={true} className='object-cover absolute rounded-lg'
+                    />
                 </div>
 
             </div>

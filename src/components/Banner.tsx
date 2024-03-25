@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './banner.module.css'
 import Image from 'next/image';
 import { useSession } from 'next-auth/react';
 
