@@ -31,7 +31,7 @@ export default function RegisterPage() {
         <main className="w-full h-full">
             <div className='flex flex-row font-mono'>
             
-                <div className='right w-1/3 m-10 relative'>
+                <div className=' w-1/3 mt-20 ml-20 mb-20 relative'>
                     <Image src='/img/Pregis.jpg' 
                     alt='register'
                     fill={true} className='object-cover absolute rounded-lg'
@@ -43,7 +43,7 @@ export default function RegisterPage() {
                     </div>
                 </div>
                 
-                <div className='right bg-sky-200 w-2/3 m-20 rounded-3xl text-sky-600 '>
+                <div className='bg-sky-200 w-2/3 m-20 rounded-3xl text-sky-600 '>
                     <h1 className="text-3xl text-center my-10 font-bold">Register</h1>
                     <form onSubmit={handleSubmit}>
                         

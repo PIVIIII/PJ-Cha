@@ -10,7 +10,7 @@ export default async function Topmenu() {
 
     return (
             <div className="h-16 bg-sky-600 fixed top-0 left-0 right-0 
-            z-30 border-t border-b border-gray-200 flex flex-row text-white">
+            z-30 border-t flex flex-row text-white">
             <Image src={'/img/logo2.jpg'} className='h-full w-auto' alt='logo'
             width={0} height={0} sizes='100vh'/>
             <TopMenuItem title='Select Car' pageRef='/car'/>

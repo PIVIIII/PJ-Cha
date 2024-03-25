@@ -13,7 +13,7 @@ export function TravelCard() {
         <div className="w-[100%] mt-20 rounded-lg bg-white flex flex-col justify-center items-center">
             <VlogPlayer vdoSrc="/video/ThailandNatural.mp4" isPlaying={playing}></VlogPlayer>
             <div className="m-5">
-                <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2
+                <button className="block rounded-md bg-sky-600 hover:bg-sky-400 px-3 py-2
                 text-white shadow-sm"
                 onClick={ ()=> { setPlaying(!playing) } }>
                 { playing? 'Pause':'Play'}

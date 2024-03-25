@@ -13,15 +13,15 @@ export default function Banner () {
     console.log(session?.user.token)
 
     return (
-        <div className='block p-5 m-0 w-screen h-[550px] relative'
+        <div className='block p-5 m-0 w-screen h-[560px] relative'
         onClick={ ()=> {setIndex(index+1) }}>
             <Image src={covers[index%3]}
             alt='cover'
             fill={true}
             objectFit='cover'/>
             <div className='relative top-20 z-20 text-center'>
-                <h1 className='text-4xl font-medium'>Your Travel Partner</h1>
-                <h3 className='text-2xl font-serif'>Explore Your World with us</h3>
+                <h1 className='text-4xl font-mono font-semibold text-sky-800'>Your Travel Partner</h1>
+                <h3 className='text-2xl font-serif font-medium text-sky-900'>Explore Your World with us</h3>
             </div>
             {
                 session? <div className='z-10 absolute top-5 right-10 font-semibold text-cyan-800 text-xl'>Hello {session.user?.name}</div>
