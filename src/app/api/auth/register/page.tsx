@@ -2,14 +2,16 @@
 
 import { useState } from 'react';
 import userRegister from '@/libs/userRegister';
+import { RegisterItem } from '../../../../../interfaces';
 import Image from 'next/image';
 
 export default function RegisterPage() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<RegisterItem>({
         name: '',
         email: '',
         tel: '',
-        password: ''
+        password: '',
+        role: 'user'
     });
 
     const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {

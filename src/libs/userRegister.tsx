@@ -1,4 +1,6 @@
-export default async function userRegister(formData:Object) {
+import { RegisterItem } from "../../interfaces";
+
+export default async function userRegister(formData:RegisterItem) {
     const response = await fetch(`${process.env.BACKEND_URL}/api/v1/auth/register`, {
         method: "POST",
         headers: {
