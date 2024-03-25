@@ -16,17 +16,17 @@ export default function AboutUs() {
             </div>
             <div className="flex flex-row mt-5">
                 <div className='rounded-lg w-[230px] h-[350px] mx-3 my-5 relative '>
-                    <Image src={'/img/cover3.jpg'} alt='Product Picture'
+                    <Image src={'/img/au1.jpg'} alt='Product Picture'
                         fill={true} className='object-cover absolute rounded-lg shadow-xl'/>
                     <div className="relative top-20 z-20 text-center text-2xl font-medium">Discounts & benefit</div>
                 </div>
                 <div className='rounded-lg w-[230px] h-[350px] mx-3 my-5 relative '>
-                    <Image src={'/img/cover3.jpg'} alt='Product Picture'
+                    <Image src={'/img/au2.jpg'} alt='Product Picture'
                         fill={true} className='object-cover absolute rounded-lg shadow-xl'/>
                     <div className="relative top-20 z-20 text-center text-2xl font-medium">Daily, weekly or monthly</div>
                 </div>
                 <div className='rounded-lg w-[230px] h-[350px] mx-3 my-5 relative '>
-                    <Image src={'/img/cover3.jpg'} alt='Product Picture'
+                    <Image src={'/img/au3.jpg'} alt='Product Picture'
                         fill={true} className='object-cover absolute rounded-lg shadow-xl'/>
                     <div className="relative top-20 z-20 text-center text-2xl font-medium">Online check-in</div>
                 </div>
