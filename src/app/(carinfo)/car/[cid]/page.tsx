@@ -17,8 +17,8 @@ export default async function CarDetailPage( {params} : { params : {cid:string} 
                     objectFit='cover'
                     />
                 </div>
-                <div className="bg-yellow-300 text-lg text-center font-serif py-2"> Description </div>   
-                <div className="text-md bg-yellow-100 font-mono py-3 ">{ carDetail.data.description }
+                <div className="bg-sky-600  text-lg text-center font-serif py-2"> Description </div>   
+                <div className="text-md bg-sky-200 font-mono py-3 ">{ carDetail.data.description }
                         <div className="text-md ">Doors: { carDetail.data.doors }</div>
                         <div className="text-md ">Seats: { carDetail.data.seats }</div>
                         <div className="text-md ">Large Bags: { carDetail.data.largebags }</div>
@@ -29,7 +29,7 @@ export default async function CarDetailPage( {params} : { params : {cid:string} 
                 
             <div className='flex items-center justify-center h-full'>
                 <Link href={`/reservations?id=${params.cid}&model=${carDetail.data.model}`}>
-                    <button className="block rounded-md bg-rose-300 hover:bg-indigo-200 px-3 py-2
+                    <button className="block rounded-md bg-sky-600 hover:bg-indigo-900 px-3 py-2
                     shadow-sm text-white">
                         Make Reservation
                     </button>
