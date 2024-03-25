@@ -2,7 +2,6 @@ import getCars from "@/libs/getCars"
 import CarCatalog from "@/components/CarCatalog"
 import { Suspense } from "react"
 import { LinearProgress } from "@mui/material"
-import CarPanel from "@/components/CarPanel"
 
 export default  function Car() {
     const cars =  getCars()
@@ -14,10 +13,7 @@ export default  function Car() {
                 <CarCatalog carJson={cars}/>
             </Suspense>
             
-            {/* <hr className="my-10"/>
-            <h1 className="text-xl font-medim">Try Client-side Car Panel</h1>
-            <CarPanel/> */}
-            
+
         </main>
     )
 
