@@ -21,12 +21,18 @@ export default async function Topmenu() {
             <TopMenuItem title='Cart' pageRef='/cart'/>
             {
                 session? <Link href="api/auth/signout">
-                    <div className='flex items-center h-full px-2 text-white text-sm'>Sign-Out of {session.user?.name}</div>
+                    <div className='flex items-center h-full px-2 mr-3 text-white text-sm'>Sign-Out of {session.user?.name}</div>
                 </Link>
-                :  <Link href="api/auth/signin">
-                    <div className='flex items-center h-full px-2 text-white text-sm'>
+                : <div className='flex flex-row pl-5'>
+                <Link href="/api/auth/register">
+                    <div className='flex items-center h-full pr-6 text-white text-sm font-sans'>
+                    Register</div>
+                </Link>  
+                <Link href="/api/auth/signin">
+                    <div className='flex items-center h-full px-4 mr-3 text-white text-sm font-sans'>
                     Sign-In</div>
                 </Link>
+                </div>
             } 
             </div>        
         </div>
